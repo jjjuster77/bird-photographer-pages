@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Privacy — Bird Photographer</title>
+<style>:root{--bg:#121316;--panel:#191b1f;--ink:#e8e6e1;--dim:#a3a19b;--line:#2c2f35;
+--accent:#c8a45c;--accentdim:#8a7440}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+padding:0 16px}
+.wrap{max-width:44rem;margin:0 auto;padding-block:3rem 5rem}
+header{border-bottom:1px solid var(--line);padding-bottom:1.5rem;margin-bottom:2.5rem}
+.mark{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+color:var(--accent);font-weight:600;margin:0 0 .6rem}
+h1{font-size:1.9rem;line-height:1.2;margin:0;text-wrap:balance;font-weight:650}
+h2{font-size:1.12rem;margin:2.6rem 0 .8rem;font-weight:650;text-wrap:balance}
+h3{font-size:1rem;margin:1.8rem 0 .5rem;font-weight:650}
+p,li{color:var(--ink)}
+em{color:var(--dim);font-style:normal;font-size:.9rem}
+header em{display:block;margin-top:.5rem}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accentdim)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+ul,ol{padding-left:1.3rem}
+li{margin:.4rem 0}
+strong{font-weight:650}
+code{background:var(--panel);padding:.1em .38em;border-radius:3px;font-size:.88em}
+.tablewrap{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:30rem}
+th,td{text-align:left;padding:.62rem .8rem;border-bottom:1px solid var(--line);
+vertical-align:top}
+th{color:var(--dim);font-weight:600;font-size:.78rem;letter-spacing:.06em;
+text-transform:uppercase;background:var(--panel)}
+tr:last-child td{border-bottom:none}
+nav{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);
+font-size:.9rem;color:var(--dim)}
+nav a{margin-right:1.4rem}
+@media (max-width:30rem){.wrap{padding-block:2rem 3rem}h1{font-size:1.55rem}}</style>
+</head><body>
+<div class="wrap">
+<header><p class="mark">Bird Photographer</p><h1>Privacy</h1><em>Bird Photographer — last updated 21 September 2026</em></header>
+<p>Short version: the app has no account, no analytics, no advertising and no server of its own. Nothing you record leaves your phone unless you export it deliberately.</p>
+<h2>What stays on your phone</h2>
+<p>Everything the app knows about you:</p>
+<ul>
+<li>Your launch point — the address or place you set off from.</li>
+<li>Your outings: when you started and ended, where you were, which birds you tagged and when, how many frames you took and how many you kept.</li>
+<li>Your track during an outing, if you allow location access.</li>
+<li>Your settings, including your eBird API key if you paste one.</li>
+</ul>
+<p>All of it is stored on the device. There is no account to sign into, nothing is backed up to us, and we cannot see any of it. If you delete the app it goes with it.</p>
+<h2>Location</h2>
+<p>The app asks for location <strong>while you are using it</strong>, for two things: recording where you stood during an outing, so a spot that produced keepers can be told apart from one you only walked past; and noticing when you have travelled far enough from your launch point that it is worth asking whether to move it.</p>
+<p>It never tracks you in the background. You can decline, and everything except the outing track still works.</p>
+<h2>What the app sends, and to whom</h2>
+<p>Four services, and nothing else:</p>
+<div class="tablewrap"><table><thead><tr><th>Who</th><th>What is sent</th><th>When</th></tr></thead><tbody>
+<tr><td><strong>National Weather Service</strong> (weather.gov)</td><td>The coordinates of the sites being planned for</td><td>When a forecast is fetched</td></tr>
+<tr><td><strong>NOAA Tides &amp; Currents</strong></td><td>A tide station identifier</td><td>At tidal sites only</td></tr>
+<tr><td><strong>eBird</strong> (Cornell Lab of Ornithology)</td><td>A site identifier and your own API key</td><td>Only if you have pasted a key</td></tr>
+<tr><td><strong>OSRM</strong> (router.project-osrm.org)</td><td>Coordinates for a drive you are asking about</td><td>When your launch point is not a metropolitan-area centre</td></tr>
+</tbody></table></div>
+<p>None of them is told who you are. There is no identifier in any of these requests that is tied to you or your device.</p>
+<p>Two further things happen through Apple rather than through us: typing an address into the launch point uses Apple's geocoder, and tapping <strong>Directions</strong> hands the destination to Maps, Google Maps or Waze, which then apply their own privacy policies.</p>
+<h2>Your eBird key</h2>
+<p>The key is yours, obtained free from eBird. It is stored on your phone and sent only to eBird. We never see it. eBird's terms ask that you not share your key with anyone, and the app is built so that you never have to — it uses yours, or it does without.</p>
+<h2>The bird data</h2>
+<p>The historical figures the app ships with are summaries fitted from the eBird Basic Dataset (Version: EBD_relJul-2026, Cornell Lab of Ornithology, Ithaca, New York, Jul 2026), used for research and education on a non-commercial basis. They are derived statistics, not eBird records, and they contain nothing about any individual observer.</p>
+<h2>Children</h2>
+<p>The app is not directed at children and collects nothing from anyone.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it.</p>
+<h2>Contact</h2>
+<p><a href="mailto:jim.juster@gmail.com">jim.juster@gmail.com</a></p>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+</div>
+</body></html>
