@@ -1,6 +1,6 @@
-# Bird Photographer — public pages
+# Bird Outing — public pages
 
-The privacy and support pages for the Bird Photographer iOS app. App Store
+The privacy and support pages for the Bird Outing iOS app. App Store
 Connect and TestFlight both require URLs that resolve for anyone, so these live
 here, in the open, rather than in the private code repositories.
 

@@ -41,30 +41,38 @@ nav a{margin-right:1.4rem}
 @media (max-width:30rem){.wrap{padding-block:2rem 3rem}h1{font-size:1.55rem}}</style>
 </head><body>
 <div class="wrap">
-<header><p class="mark">Bird Outing</p><h1>Privacy</h1><em>Bird Outing — last updated 10 October 2026</em></header>
+<header><p class="mark">Bird Outing</p><h1>Privacy</h1><em>Bird Outing — last updated 17 October 2026</em></header>
 <p>Short version: the app has no account, no analytics, no advertising and no server of its own. Your outings, tracks and notes stay on your phone unless you export them. To answer your questions, the app asks the services listed below directly; some of those requests include your launch point.</p>
 <h2>What stays on your phone</h2>
 <p>Everything the app knows about you:</p>
 <ul>
-<li>Your launch point — the address or place you set off from.</li>
+<li>Your home — where your mornings usually start — and your launch point, the address or place you set off from on a given day.</li>
+<li>The addresses you type, and where they were found.</li>
 <li>Your outings: when you started and ended, where you were, which birds you tagged and when, how many frames you took and how many you kept.</li>
 <li>Your track during an outing, if you allow location access.</li>
 <li>Your settings, including your eBird API key if you paste one.</li>
 </ul>
 <p>All of it is stored on the device. There is no account to sign into, nothing is backed up to us, and we cannot see any of it. If you delete the app it goes with it.</p>
+<h2>Backups and the locked phone</h2>
+<p>Your outings, tracks, marks and notes are included in your phone's iCloud or computer backup, like other app data. Your home, your launch point, the addresses you type and the drive times measured from them are kept out of backups, as are your drive limit and how busy the sites within it are; after a restore to a new phone you set them again.</p>
+<p>While the phone is locked, the outing log and those places cannot be read, even by the app. GPS points recorded during an outing while the phone is locked are kept in a small separate file until the next unlock, when they are added to the log. When the open outing is not yet in the log, that file also holds the outing's record (its site, times, birds, marks and notes). Unlike the log, that file can be read while the phone is locked, once the phone has been unlocked after starting up, and it is included in a backup made before the next unlock.</p>
+<p>The app can also lock itself with Face ID, Touch ID or the phone's passcode (Settings, App lock). It is on by default. The lock covers the app's screens; it does not encrypt anything. Outing tracking keeps running while the app is locked.</p>
 <h2>Location</h2>
-<p>The app asks for location <strong>while you are using it</strong>, for two things: recording where you stood during an outing, so a spot that produced keepers can be told apart from one you only walked past; and noticing when you have travelled far enough from your launch point that it is worth asking whether to move it.</p>
+<p>The app asks for location <strong>while you are using it</strong>, for two things: recording where you stood during an outing, so a spot that produced keepers can be told apart from one you only walked past; and noticing when you have traveled far enough from your launch point that it is worth asking whether to move it.</p>
 <p>During an outing you started, the app keeps recording your track with the screen off, so a morning with the phone in a pocket still has one; the blue location indicator shows while it does, and it stops when you end the outing or after 12 hours. It does not track you at any other time. You can decline location access, and everything except the outing track still works.</p>
 <h2>What the app sends, and to whom</h2>
 <p>The app sends requests to these services and no others:</p>
 <div class="tablewrap"><table><thead><tr><th>Who</th><th>What is sent</th><th>When</th></tr></thead><tbody>
-<tr><td><strong>National Weather Service</strong> (weather.gov)</td><td>Site positions; your launch point rounded to about 1 km; points along the drive. Each request names the app and its contact address, not you.</td><td>When a forecast is fetched</td></tr>
+<tr><td><strong>National Weather Service</strong> (weather.gov)</td><td>Site positions; your launch point rounded to about 1 km; points in a box around it and the site you open, rounded the same way. Each request names the app and its contact address, not you.</td><td>When a forecast is fetched</td></tr>
 <tr><td><strong>NOAA Tides &amp; Currents</strong></td><td>A tide station identifier and a date</td><td>At tidal sites only</td></tr>
 <tr><td><strong>eBird</strong> (Cornell Lab of Ornithology)</td><td>Site identifiers with your own API key, for recent sightings on each plan row and a weekly check of how busy sites within your drive are. Together these show eBird, under your account, the area you plan around.</td><td>Only if you have entered a key</td></tr>
-<tr><td><strong>Apple Maps</strong></td><td>Your launch point and site positions, for drive and traffic times; an address you type, to find it; your launch point, for its time zone; your current position, for a place name, when you choose Use my location</td><td>When those are needed</td></tr>
+<tr><td><strong>Apple Maps</strong></td><td>Your launch point and site positions, for drive and traffic times; an address you type, to find it; your launch point, for its time zone; your current position, for a place name, when you choose Use my location and when the app opens with a launch point set, to notice you have traveled</td><td>When those are needed; the position check each time the app opens with a launch point set</td></tr>
+<tr><td><strong>Apple</strong> (map tiles and app downloads)</td><td>The map tiles for the coverage map, and the downloadable areas (On-Demand Resources), served by Apple</td><td>When the map is shown or an area is downloaded</td></tr>
 </tbody></table></div>
 <p>None of these requests carries an identifier for your device. eBird requests carry your own key, which is tied to your eBird account.</p>
-<p>Tapping <strong>Directions</strong> hands the destination to Maps, Google Maps or Waze, which apply their own privacy policies. <strong>Send to eBird</strong> opens eBird's own page; you sign in and submit there, and the app never sees your eBird password.</p>
+<p>Tapping <strong>Directions</strong> hands the destination to Maps, Google Maps or Waze, which apply their own privacy policies. Tapping a site's hours link opens that site's own page or its Apple Maps listing (the site's name and position, never yours) in Safari or Maps. <strong>Send to eBird</strong> opens eBird's own page; you sign in and submit there, and the app never sees your eBird password.</p>
+<h2>Exports</h2>
+<p>The eBird file never includes your private notes. The whole-log export ("The log, as CSV, with your notes") does include them, and the app says so before you share it.</p>
 <h2>Your eBird key</h2>
 <p>The key is yours, obtained free from eBird. It is stored on your phone and sent only to eBird. We never see it. eBird's terms ask that you not share your key with anyone, and the app is built so that you never have to — it uses yours, or it does without.</p>
 <h2>The bird data</h2>
